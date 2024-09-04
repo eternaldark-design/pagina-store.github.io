@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <link rel="stylesheet" href="contac.css">
+</head>
+<body>
+          <h2>CONTACTANOS!</h2>
+          <form action="enviar.php" method="POST" class="container">
+            <input type="text"  placeholder="usuario" name="usuario" required><br>
+            <input type="email"  placeholder="Email" name="correo" required><br>
+            <input type="text"  placeholder="asunto" name="asunto" required><br>
+            <textarea placeholder="Mensaje"name="msg" required></textarea><br>
+            <input type="submit" class="col-md-6" value="ENVIAR" name="enviar">
+          </form>
+</body>
+</html>

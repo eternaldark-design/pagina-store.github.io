@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ingresar</title>
+  <link rel="stylesheet"  href="formulario.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="form-wrapper sign-in">
+      <form action="ingresar.php" method="POST">
+        <h2>Ingresar</h2>
+        <div class="input-group">
+          <input type="text" name="usuario" required>
+          <label for="">usuario</label>
+        </div>
+        <div class="input-group">
+          <input type="text" name="correo" required>
+          <label for="">correo</label>
+        </div>
+        <div class="input-group">
+          <input type="password" name="contraseña" required>
+          <label for="">contraseña</label>
+        </div>
+        <div class="remember">
+          <label><input type="checkbox"> recordar usuario</label>
+        </div>
+        <button  type="submit">Ingresar</button>
+        <div class="signUp-link">
+          <p>¿No estas registrado? <a href="#" class="signUpBtn-link">registrarse</a></p>
+        </div>
+      </form>
+    </div>
+
+    <div class="form-wrapper sign-up">
+      <form action="registrar.php" method="POST">
+        <h2>Registrarse</h2>
+        <div class="input-group">
+          <input type="text"  name="usuario" required>
+          <label for="">usuario</label>
+        </div>
+        <div class="input-group">
+          <input type="email" name="correo" required>
+          <label for="">correo</label>
+        </div>
+        <div class="input-group">
+          <input type="password" name="contraseña" required>
+          <label for="">contraseña</label>
+        </div>
+        <div class="remember">
+          <label><input type="checkbox"> Acepto los términos y condiciones</label>
+        </div>
+        <button type="submit">registrarse</button>
+        <div class="signUp-link">
+          <p>¿Ya tienes una cuenta? <a href="#" class="signInBtn-link">Ingresar</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="formulario.js"></script>
+</body>
+
+</html>
